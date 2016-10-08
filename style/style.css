@@ -1,0 +1,146 @@
+@import "fonts.css";
+body {
+  font-family: MyriadProRegular;
+  margin: 0 auto;
+  width: 50%;
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+#main {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 57px;
+}
+.item .header {
+  position: relative;
+}
+.item .header h2 {
+  position: relative;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 58px;
+  z-index: 100;
+  font-size: 26.5px;
+  background-color: #fff;
+  color: #3d6cb0;
+  text-transform: uppercase;
+  font-family: MyriadProBold;
+}
+.item .header hr {
+  position: absolute;
+  top: 7px;
+  z-index: 10;
+  border: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #3d6cb0;
+}
+.left-column {
+  width: 34%;
+  margin-left: 38px;
+}
+.left-column .card svg {
+  width: 100%;
+}
+.left-column .card h1,
+.left-column .card h4 {
+  padding-left: 19px;
+  margin: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.left-column .card h1 {
+  padding-top: 17px;
+  font-size: 36px;
+  line-height: 0.85;
+}
+.left-column .card h4 {
+  line-height: 2.2;
+  font-family: MyriadProBold;
+  font-size: 15.5px;
+}
+.left-column .card .surname {
+  font-size: 40px;
+  font-family: MyriadProBold;
+}
+.left-column .profile {
+  margin-top: 48px;
+}
+.left-column .profile .content p {
+  margin-top: 14px;
+  margin-left: 2px;
+  font-size: 10px;
+  line-height: 1.2;
+}
+.left-column .profile .content p span {
+  font-family: MyriadProBold;
+}
+.left-column .contact {
+  margin-top: 35px;
+}
+.left-column .contact .content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.left-column .contact .content ul {
+  margin-top: 18px;
+  margin-left: -8px;
+  display: inline-block;
+  list-style: none;
+}
+.left-column .contact .content ul li {
+  padding: 9.5px 11px;
+  font-size: 13.3px;
+}
+.left-column .contact .content .top {
+  margin-right: 14px;
+}
+.left-column .contact .content .top li {
+  color: #3d6cb0;
+  text-transform: uppercase;
+  font-family: MyriadProBold;
+}
+.left-column .skills {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.left-column .skills .content {
+  margin-top: 21px;
+  margin-left: 6px;
+}
+.left-column .skills .content .skill {
+  margin-bottom: 4px;
+}
+.left-column .skills .content .skill h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16.6px;
+}
+.left-column .skills .content .skill .circles {
+  min-height: 25px;
+  padding-left: 27px;
+  width: 100%;
+}
+.left-column .skills .content .skill .circles .circle {
+  display: inline-block;
+  min-height: 11px;
+  width: 11px;
+  margin-right: 3.5px;
+  background-color: #3d6cb0;
+  border-radius: 50%;
+}
+.left-column .skills .content .skill .circles .opacity {
+  opacity: 0.4;
+}
+.right-column {
+  width: 51%;
+  margin-right: 20px;
+}

@@ -1,0 +1,144 @@
+@import "fonts.css"
+
+//mixin
+bluehead()
+  color: #3d6cb0
+  text-transform uppercase
+  font-family MyriadProBold
+
+body
+  font-family MyriadProRegular
+  margin 0 auto
+  width 50%
+
+h1, h2, h3, h4, ul, li
+  padding 0px
+  margin 0px
+
+#main
+  display flex
+  justify-content space-between
+  padding-top 57px
+
+.item
+  .header
+    position relative
+
+    h2
+      position relative
+      display inline-block
+      padding-right 5px
+      padding-left 58px
+      z-index 100
+      font-size 26.5px
+      background-color white
+      bluehead()
+
+    hr
+      position absolute
+      top 7px
+      z-index 10
+      border 0
+      height 3px
+      width 100%
+      background-color: #3d6cb0
+
+.left-column
+  width 34%
+  margin-left 38px
+
+  .card
+    svg
+      width 100%
+
+    h1, h4
+      padding-left 19px
+      margin 0px
+      text-align center
+      text-transform uppercase
+      font-weight normal
+
+    h1
+      padding-top 17px
+      font-size 36px
+      line-height 0.85
+
+    h4
+      line-height 2.2
+      font-family MyriadProBold
+      font-size 15.5px
+
+    .surname
+      font-size 40px
+      font-family MyriadProBold
+
+  .profile
+    margin-top 48px
+
+    .content
+      p
+        margin-top 14px
+        margin-left 2px
+        font-size 10px
+        line-height 1.2
+
+        span
+          font-family MyriadProBold
+
+  .contact
+    margin-top 35px
+
+    .content
+      display flex
+      flex-wrap nowrap
+      ul
+        margin-top 18px
+        margin-left -8px
+        display inline-block
+        list-style none
+
+        li
+          padding 9.5px 11px
+          font-size 13.3px
+
+      .top
+        margin-right 14px
+
+        li
+          bluehead()
+
+  .skills
+    margin-top 28px
+    margin-bottom 28px
+
+    .content
+      margin-top 21px
+      margin-left 6px
+
+      .skill
+        margin-bottom 4px
+
+        h4
+          text-transform uppercase
+          text-align center
+          font-size 16.6px
+
+        .circles
+          min-height 25px
+          padding-left 27px
+          width 100%
+
+          .circle
+            display inline-block
+            min-height 11px
+            width 11px
+            margin-right 3.5px
+            background-color #3d6cb0
+            border-radius 50%
+
+          .opacity
+            opacity 0.4
+
+.right-column
+  width 51%
+  margin-right 20px
