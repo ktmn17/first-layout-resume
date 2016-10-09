@@ -7,20 +7,50 @@ bluehead()
   font-family MyriadProBold
 
 body
-  font-family MyriadProRegular
   margin 0 auto
   width 50%
+  font-family MyriadProRegular
 
-h1, h2, h3, h4, ul, li
+h1, h2, h3, h4, ul, li, p
   padding 0px
   margin 0px
+  font-weight normal
 
-#main
+.main
   display flex
   justify-content space-between
   padding-top 57px
 
 .item
+  position relative
+
+  .icon
+    position absolute
+    height 50px
+    width 50px
+    top -6px
+    left 3px
+    z-index 101
+    background url(img/sprite.png) no-repeat
+
+  .icon_profile
+    background-position 0 0
+
+  .icon_contact
+    background-position -56px 0
+
+  .icon_skills
+    background-position -109px 0
+
+  .icon_education
+    background-position -160px 0
+
+  .icon_experience
+    background-position -216px 0px
+
+  .icon_software
+    background-position -270px 0
+
   .header
     position relative
 
@@ -91,6 +121,7 @@ h1, h2, h3, h4, ul, li
     .content
       display flex
       flex-wrap nowrap
+
       ul
         margin-top 18px
         margin-left -8px
@@ -125,7 +156,7 @@ h1, h2, h3, h4, ul, li
 
         .circles
           min-height 25px
-          padding-left 27px
+          text-align center
           width 100%
 
           .circle
@@ -141,4 +172,91 @@ h1, h2, h3, h4, ul, li
 
 .right-column
   width 51%
-  margin-right 20px
+  margin-right 27px
+
+ .education
+   margin-top 20px
+
+   .content
+
+     span
+      bluehead()
+
+     ul
+       margin-top 24px
+       margin-left 5px
+       list-style none
+
+       li
+         margin-top 7px
+         padding-left 25px
+         background url(img/dote.png) 0px 3px no-repeat
+
+         h3
+           font-size 16.6px
+           white-space pre-wrap
+
+          p
+            margin-top 5px
+            font-family MyriadProRegular
+            font-size 10px
+            line-height 1.2
+
+  .experience
+    margin-top 41px
+
+    .content
+      @extend .education .content
+
+      ul
+        margin-top 34px
+
+        span
+          color black
+
+  .software
+    margin-top 41px
+
+    .content
+      display flex
+      flex-wrap wrap
+      justify-content space-between
+      margin-top 20px
+      margin-left 2px
+
+      .software-skill
+        padding 2px 0px 14px 0px
+        width 44.5%
+
+        h4
+          text-transform uppercase
+          margin-bottom 6px
+          font-size 16.6px
+
+        .line
+          width 100%
+          height 14px
+          background-color #e6e6e6
+
+          .innerline
+            width 50%
+            height 14px
+            background-color #3d6cb0
+
+      .software-skill:nth-child(2n)
+        padding-right 0px
+
+@media screen and (max-width:1200px)
+
+  .main
+    display flex
+    flex-direction column
+
+    .left-column,
+    .right-column
+      width 100%
+      padding 0px
+      margin 0px
+
+  .contact .content
+    justify-content center
